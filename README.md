@@ -40,13 +40,13 @@ Admin device     | cryptogen            |
 Binary (in YAML) | Description
 ---------------- | :-------------------
 Peer             | Peers are configured using the core.yaml file;
-                   Launched as process to become a network node;
-                   Can be tagged as Anchor or Leader; 
-                   Can be used to manage network and channel config.
+Peer             | Launched as process to become a network node;
+Peer             | Can be tagged as Anchor or Leader; 
+Peer             | Can be used to manage network and channel config.
 Orderer          | Orderers can be configured using orderer.yaml file.
-                   Used to configure nodes responsible for block creation and replication.
+Orderer          | Used to configure nodes responsible for block creation and replication.
 configtxgen      | Used to generate network config with configtx.yaml file. 
-                   Used to manage network and channel configs through a peer.
+configtxgen      | Used to manage network and channel configs through a peer.
 configtxlator    | Used to translate between the protocol-buffer (used by grpc) and JSON.
 cryptogen        | Used to generate crypto material for testing.
 fabric-ca-server | A standalone process that exposes services for managing identities and certificates.
