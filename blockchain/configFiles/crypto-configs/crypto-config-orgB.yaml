@@ -1,0 +1,31 @@
+# RegistryChain model for healthcare registries and repositories interchange with Hyperledger Fabric V2
+# Author: Emeka Chukwu
+#
+# ---------------------------------------------------------------------------
+# "PeerOrgs" - Definition of organizations managing peer nodes
+# This file define peers for orgB
+# ---------------------------------------------------------------------------
+PeerOrgs:
+  # ---------------------------------------------------------------------------
+  # OrgB
+  # EnableNodeOUs:  enables the identify classification
+  # ---------------------------------------------------------------------------
+  - Name: OrgB
+    Domain: orgB.com
+    EnableNodeOUs: true
+    # ---------------------------------------------------------------------------
+    # "Template"
+    # ---------------------------------------------------------------------------
+    # Used for the definition of hosts that are created sequentially.
+    # ---------------------------------------------------------------------------
+    Template:
+      Count: 1
+      SANS:
+        - localhost
+    # ---------------------------------------------------------------------------
+    # "Users"
+    # ---------------------------------------------------------------------------
+    # Count: The number of user accounts in addition to default Admin account
+    # ---------------------------------------------------------------------------
+    Users:
+      Count: 1
