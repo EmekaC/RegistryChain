@@ -34,19 +34,19 @@ Core components  | Tools and Utilities  |  Fabric Certification Authority
 ---------------- | :------------------- | :--------------------------
 Peer ( tagged as anchor/Leader) | configtxgen          | Client CA
 Orderer          | configtxlator        | Server CA
-                 | cryptogen            |
+Admin device     | cryptogen            |
 
 ### Description of Binaries ###
 Binary (in YAML) | Description
 ---------------- | :-------------------
 Peer             | Peers are configured using the core.yaml file;
-                 | Launched as process to become a network node;
-                 | Can be tagged as Anchor or Leader; 
-                 | Can be used to manage network and channel config.
+                   Launched as process to become a network node;
+                   Can be tagged as Anchor or Leader; 
+                   Can be used to manage network and channel config.
 Orderer          | Orderers can be configured using orderer.yaml file.
-                 | Used to configure nodes responsible for block creation and replication.
+                   Used to configure nodes responsible for block creation and replication.
 configtxgen      | Used to generate network config with configtx.yaml file. 
-                 | Used to manage network and channel configs through a peer.
+                   Used to manage network and channel configs through a peer.
 configtxlator    | Used to translate between the protocol-buffer (used by grpc) and JSON.
 cryptogen        | Used to generate crypto material for testing.
 fabric-ca-server | A standalone process that exposes services for managing identities and certificates.
