@@ -55,10 +55,10 @@ Organizations:
                 Type: Signature
                 Rule: "OR('OrgBMSP.peer')"
         OrdererEndpoints:
-          - "orderer0.orgB.com:70xx"
+          - "orderer0.orgB.com:7052"
         AnchorPeers:
             - Host: peer0.orgB.com
-              Port: 9051
+              Port: 7053
 
     - &OrgC
         Name: OrgCMSP
@@ -78,10 +78,10 @@ Organizations:
                 Type: Signature
                 Rule: "OR('OrgCMSP.peer')"
         OrdererEndpoints:
-          - "orderer0.orgC.com:70xx"
+          - "orderer0.orgC.com:7054"
         AnchorPeers:
             - Host: peer0.orgC.com
-              Port: 11051
+              Port: 7055
 ################################################################################
 #
 #   SECTION: Capabilities
@@ -154,11 +154,11 @@ Orderer: &OrdererDefaults
           ClientTLSCert: ../organizations/ordererOrganizations/orgA.com/orderers/orderer0.orgA.com/tls/server.crt
           ServerTLSCert: ../organizations/ordererOrganizations/orgA.com/orderers/orderer0.orgA.com/tls/server.crt
         - Host: orderer0.orgB.com
-          Port: 70xx
+          Port: 7052
           ClientTLSCert: ../organizations/ordererOrganizations/orgB.com/orderers/orderer0.orgB.com/tls/server.crt
           ServerTLSCert: ../organizations/ordererOrganizations/orgB.com/orderers/orderer0.orgB.com/tls/server.crt
         - Host: orderer0.orgC.com
-          Port: 70xx
+          Port: 7054
           ClientTLSCert: ../organizations/ordererOrganizations/orgC.com/orderers/orderer0.orgC.com/tls/server.crt
           ServerTLSCert: ../organizations/ordererOrganizations/orgC.com/orderers/orderer0.orgC.com/tls/server.crt
 

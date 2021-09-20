@@ -9,10 +9,10 @@ OrdererOrgs:
   # Orderer
   # ---------------------------------------------------------------------------
   - Name: Orderer0
-    Domain: orgA.com
+    Domain: orgB.com
     EnableNodeOUs: true
     # ---------------------------------------------------------------------------
-    # SANS: (Optional) Specifies one or more Subject Alternative Name
+    # SANS: (Optional) Specifies one or more Subject Alternative Names
     # to be set in the resulting x509.
     # ---------------------------------------------------------------------------
     Specs:
