@@ -1,0 +1,235 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+# define all 3 orgs and order docker config
+
+version: '2'
+
+volumes:
+  orderer0.orgA.com:
+  orderer0.orgB.com:
+  orderer0.orgC.com:
+  peer0.orgA.com:
+  peer0.orgB.com:
+  peer0.orgC.com:
+networks:
+  RegistryChainChannel:
+
+services:
+
+  orderer0.orgA.com:
+    container_name: orderer0.orgA.com
+    image: hyperledger/fabric-orderer:$IMAGE_TAG
+    environment:
+      - FABRIC_LOGGING_SPEC=INFO
+      - ORDERER_GENERAL_LISTENADDRESS=0.0.0.0
+      - ORDERER_GENERAL_LISTENPORT=7050
+      - ORDERER_GENERAL_GENESISMETHOD=file
+      - ORDERER_GENERAL_GENESISFILE=/var/hyperledger/orgA/orgA.genesis.block
+      - ORDERER_GENERAL_LOCALMSPID=OrgAMSP
+      - ORDERER_GENERAL_LOCALMSPDIR=/var/hyperledger/orgA/msp
+      # enabled TLS
+      - ORDERER_GENERAL_TLS_ENABLED=true
+      - ORDERER_GENERAL_TLS_PRIVATEKEY=/var/hyperledger/orgA/tls/server.key
+      - ORDERER_GENERAL_TLS_CERTIFICATE=/var/hyperledger/orgA/tls/server.crt
+      - ORDERER_GENERAL_TLS_ROOTCAS=[/var/hyperledger/orgA/tls/ca.crt]
+      - ORDERER_KAFKA_TOPIC_REPLICATIONFACTOR=1
+      - ORDERER_KAFKA_VERBOSE=true
+      - ORDERER_GENERAL_CLUSTER_CLIENTCERTIFICATE=/var/hyperledger/orgA/tls/server.crt
+      - ORDERER_GENERAL_CLUSTER_CLIENTPRIVATEKEY=/var/hyperledger/orgA/tls/server.key
+      - ORDERER_GENERAL_CLUSTER_ROOTCAS=[/var/hyperledger/orgA/tls/ca.crt]
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric
+    command: orderer
+    volumes:
+        - ../system-genesis-block/genesis.block:/var/hyperledger/orgA/orgA.genesis.block
+        - ../organizations/ordererOrganizations/orgA.com/orderers/orderer0.orgA.com/msp:/var/hyperledger/orgA/msp
+        - ../organizations/ordererOrganizations/orgA.com/orderers/orderer0.orgA.com/tls/:/var/hyperledger/orgA/tls
+        - orderer0.orgA.com:/var/hyperledger/production/orderer
+    ports:
+      - 7050:7050
+    networks:
+      - RegistryChainChannel
+
+
+  orderer0.orgB.com:
+    container_name: orderer0.orgB.com
+    image: hyperledger/fabric-orderer:$IMAGE_TAG
+    environment:
+      - FABRIC_LOGGING_SPEC=INFO
+      - ORDERER_GENERAL_LISTENADDRESS=0.0.0.0
+      - ORDERER_GENERAL_LISTENPORT=7050
+      - ORDERER_GENERAL_GENESISMETHOD=file
+      - ORDERER_GENERAL_GENESISFILE=/var/hyperledger/orderer/orderer.genesis.block
+      - ORDERER_GENERAL_LOCALMSPID=OrgBMSP
+      - ORDERER_GENERAL_LOCALMSPDIR=/var/hyperledger/orgB/msp
+      # enabled TLS
+      - ORDERER_GENERAL_TLS_ENABLED=true
+      - ORDERER_GENERAL_TLS_PRIVATEKEY=/var/hyperledger/orgB/tls/server.key
+      - ORDERER_GENERAL_TLS_CERTIFICATE=/var/hyperledger/orgB/tls/server.crt
+      - ORDERER_GENERAL_TLS_ROOTCAS=[/var/hyperledger/orgB/tls/ca.crt]
+      - ORDERER_KAFKA_TOPIC_REPLICATIONFACTOR=1
+      - ORDERER_KAFKA_VERBOSE=true
+      - ORDERER_GENERAL_CLUSTER_CLIENTCERTIFICATE=/var/hyperledger/orgB/tls/server.crt
+      - ORDERER_GENERAL_CLUSTER_CLIENTPRIVATEKEY=/var/hyperledger/orgB/tls/server.key
+      - ORDERER_GENERAL_CLUSTER_ROOTCAS=[/var/hyperledger/orgB/tls/ca.crt]
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric
+    command: orderer
+    volumes:
+        - ../system-genesis-block/genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+        - ../organizations/ordererOrganizations/orgB.com/orderers/orderer0.orgB.com/msp:/var/hyperledger/orgB/msp
+        - ../organizations/ordererOrganizations/orgB.com/orderers/orderer0.orgB.com/tls/:/var/hyperledger/orgB/tls
+        - orderer0.orgB.com:/var/hyperledger/production/orderer
+    ports:
+      - 7050:7050
+    networks:
+      - RegistryChainChannel
+
+
+
+  orderer0.orgC.com:
+    container_name: orderer0.orgC.com
+    image: hyperledger/fabric-orderer:$IMAGE_TAG
+    environment:
+      - FABRIC_LOGGING_SPEC=INFO
+      - ORDERER_GENERAL_LISTENADDRESS=0.0.0.0
+      - ORDERER_GENERAL_LISTENPORT=7050
+      - ORDERER_GENERAL_GENESISMETHOD=file
+      - ORDERER_GENERAL_GENESISFILE=/var/hyperledger/orderer/orderer.genesis.block
+      - ORDERER_GENERAL_LOCALMSPID=OrgCMSP
+      - ORDERER_GENERAL_LOCALMSPDIR=/var/hyperledger/orgC/msp
+      # enabled TLS
+      - ORDERER_GENERAL_TLS_ENABLED=true
+      - ORDERER_GENERAL_TLS_PRIVATEKEY=/var/hyperledger/orgC/tls/server.key
+      - ORDERER_GENERAL_TLS_CERTIFICATE=/var/hyperledger/orgC/tls/server.crt
+      - ORDERER_GENERAL_TLS_ROOTCAS=[/var/hyperledger/orgC/tls/ca.crt]
+      - ORDERER_KAFKA_TOPIC_REPLICATIONFACTOR=1
+      - ORDERER_KAFKA_VERBOSE=true
+      - ORDERER_GENERAL_CLUSTER_CLIENTCERTIFICATE=/var/hyperledger/orgC/tls/server.crt
+      - ORDERER_GENERAL_CLUSTER_CLIENTPRIVATEKEY=/var/hyperledger/orgC/tls/server.key
+      - ORDERER_GENERAL_CLUSTER_ROOTCAS=[/var/hyperledger/orgC/tls/ca.crt]
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric
+    command: orderer
+    volumes:
+        - ../system-genesis-block/genesis.block:/var/hyperledger/orderer/orderer.genesis.block
+        - ../organizations/ordererOrganizations/orgA.com/orderers/orderer0.orgA.com/msp:/var/hyperledger/orgC/msp
+        - ../organizations/ordererOrganizations/orgA.com/orderers/orderer0.orgA.com/tls/:/var/hyperledger/orgC/tls
+        - orderer0.orgC.com:/var/hyperledger/production/orderer
+    ports:
+      - 7050:7050
+    networks:
+      - RegistryChainChannel
+
+
+
+
+
+
+  peer0.orgA.com:
+    container_name: peer0.orgA.com
+    image: hyperledger/fabric-peer:$IMAGE_TAG
+    environment:
+      #Generic peer variables
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=${COMPOSE_PROJECT_NAME}_RegistryChainChannel
+      - FABRIC_LOGGING_SPEC=INFO
+      #- FABRIC_LOGGING_SPEC=DEBUG
+      - CORE_PEER_TLS_ENABLED=true
+      - CORE_PEER_GOSSIP_USELEADERELECTION=true
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+      - CORE_PEER_PROFILE_ENABLED=true
+      - CORE_PEER_TLS_CERT_FILE=/etc/hyperledger/fabric/tls/server.crt
+      - CORE_PEER_TLS_KEY_FILE=/etc/hyperledger/fabric/tls/server.key
+      - CORE_PEER_TLS_ROOTCERT_FILE=/etc/hyperledger/fabric/tls/ca.crt
+      - CORE_PEER_ID=peer0.orgA.com
+      - CORE_PEER_ADDRESS=peer0.orgA.com:7051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:7051
+      - CORE_PEER_CHAINCODEADDRESS=peer0.orgA.com:7052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:7052
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.orgA.com:7051
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.orgA.com:7051
+      - CORE_PEER_LOCALMSPID=OrgAMSP
+    volumes:
+        - /var/run/:/host/var/run/
+        - ../organizations/peerOrganizations/orgA.com/peers/peer0.orgA.com/msp:/etc/hyperledger/fabric/msp
+        - ../organizations/peerOrganizations/orgA.com/peers/peer0.orgA.com/tls:/etc/hyperledger/fabric/tls
+        - peer0.orgA.com:/var/hyperledger/production
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
+    command: peer node start
+    ports:
+      - 7051:7051
+    networks:
+      - RegistryChainChannel
+
+  peer0.orgB.com:
+    container_name: peer0.orgB.com
+    image: hyperledger/fabric-peer:$IMAGE_TAG
+    environment:
+      #Generic peer variables
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=${COMPOSE_PROJECT_NAME}_RegistryChainChannel
+      - FABRIC_LOGGING_SPEC=INFO
+      #- FABRIC_LOGGING_SPEC=DEBUG
+      - CORE_PEER_TLS_ENABLED=true
+      - CORE_PEER_GOSSIP_USELEADERELECTION=true
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+      - CORE_PEER_PROFILE_ENABLED=true
+      - CORE_PEER_TLS_CERT_FILE=/etc/hyperledger/fabric/tls/server.crt
+      - CORE_PEER_TLS_KEY_FILE=/etc/hyperledger/fabric/tls/server.key
+      - CORE_PEER_TLS_ROOTCERT_FILE=/etc/hyperledger/fabric/tls/ca.crt
+      # Peer specific variabes
+      - CORE_PEER_ID=peer0.orgB.com
+      - CORE_PEER_ADDRESS=peer0.orgB.com:9051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:9051
+      - CORE_PEER_CHAINCODEADDRESS=peer0.orgB.com:9052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:9052
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.orgB.com:9051
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.orgB.com:9051
+      - CORE_PEER_LOCALMSPID=OrgBMSP
+    volumes:
+        - /var/run/:/host/var/run/
+        - ../organizations/peerOrganizations/orgB.com/peers/peer0.orgB.com/msp:/etc/hyperledger/fabric/msp
+        - ../organizations/peerOrganizations/orgB.com/peers/peer0.orgB.com/tls:/etc/hyperledger/fabric/tls
+        - peer0.orgB.com:/var/hyperledger/production
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
+    command: peer node start
+    ports:
+      - 9051:9051
+    networks:
+      - RegistryChainChannel
+
+  peer0.orgC.com:
+    container_name: peer0.orgC.com
+    image: hyperledger/fabric-peer:$IMAGE_TAG
+    environment:
+      #Generic peer variables
+      - CORE_VM_ENDPOINT=unix:///host/var/run/docker.sock
+      - CORE_VM_DOCKER_HOSTCONFIG_NETWORKMODE=${COMPOSE_PROJECT_NAME}_RegistryChainChannel
+      - FABRIC_LOGGING_SPEC=INFO
+      #- FABRIC_LOGGING_SPEC=DEBUG
+      - CORE_PEER_TLS_ENABLED=true
+      - CORE_PEER_GOSSIP_USELEADERELECTION=true
+      - CORE_PEER_GOSSIP_ORGLEADER=false
+      - CORE_PEER_PROFILE_ENABLED=true
+      - CORE_PEER_TLS_CERT_FILE=/etc/hyperledger/fabric/tls/server.crt
+      - CORE_PEER_TLS_KEY_FILE=/etc/hyperledger/fabric/tls/server.key
+      - CORE_PEER_TLS_ROOTCERT_FILE=/etc/hyperledger/fabric/tls/ca.crt
+      # Peer specific variabes
+      - CORE_PEER_ID=peer0.orgC.com
+      - CORE_PEER_ADDRESS=peer0.orgC.com:11051
+      - CORE_PEER_LISTENADDRESS=0.0.0.0:11051
+      - CORE_PEER_CHAINCODEADDRESS=peer0.orgC.com:11052
+      - CORE_PEER_CHAINCODELISTENADDRESS=0.0.0.0:11052
+      - CORE_PEER_GOSSIP_EXTERNALENDPOINT=peer0.orgC.com:11051
+      - CORE_PEER_GOSSIP_BOOTSTRAP=peer0.orgC.com:11051
+      - CORE_PEER_LOCALMSPID=OrgCMSP
+    volumes:
+        - /var/run/:/host/var/run/
+        - ../organizations/peerOrganizations/orgC.com/peers/peer0.orgC.com/msp:/etc/hyperledger/fabric/msp
+        - ../organizations/peerOrganizations/orgC.com/peers/peer0.orgC.com/tls:/etc/hyperledger/fabric/tls
+        - peer0.orgC.com:/var/hyperledger/production
+    working_dir: /opt/gopath/src/github.com/hyperledger/fabric/peer
+    command: peer node start
+    ports:
+      - 11051:11051
+    networks:
+      - RegistryChainChannel

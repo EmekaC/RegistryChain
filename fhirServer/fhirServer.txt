@@ -1,0 +1,44 @@
+.
+├── fhirServer.txt
+├── package.json
+└── src
+    ├── db
+    │   └── mongoose.js
+    ├── index.js
+    ├── models
+    │   ├── allergyIntolerance.js
+    │   ├── condition.js
+    │   ├── ipsRepository.js
+    │   ├── medicationStatement.js
+    │   ├── organization.js
+    │   ├── organizationRegistry.js
+    │   ├── practitioner.js
+    │   ├── practitionerRegistry.js
+    │   ├── practitionerRole.js
+    │   ├── schemas
+    │   │   ├── allergyIntoleranceSchema.js
+    │   │   ├── codeSystemSchema.js
+    │   │   ├── conditionSchema.js
+    │   │   ├── dosageSchema.js
+    │   │   ├── endpointSchema.js
+    │   │   ├── healthcareServiceSchema.js
+    │   │   ├── locationSchema.js
+    │   │   ├── medicationStatementSchema.js
+    │   │   ├── organizationSchema.js
+    │   │   ├── practitionerRoleSchema.js
+    │   │   ├── practitionerSchema.js
+    │   │   └── valueSetSchema.js
+    │   └── terminologyRegistry.js
+    └── routers
+        ├── PractitionerRegistry.js
+        ├── allergyIntolerance.js
+        ├── condition.js
+        ├── ipsRepository.js
+        ├── medicationStatement.js
+        ├── organization.js
+        ├── organizationRegistry.js
+        ├── practitioner.js
+        ├── practitionerRole.js
+        └── terminologyRegistry.js
+
+5 directories, 36 files
