@@ -2,7 +2,7 @@
 # Author: Emeka Chukwu
 #
 # ---------------------------------------------------------------------------
-# "OrdererOrgs" -define ordering node and create an organization definition
+# This is a configuration file for orderer for orgC
 # ---------------------------------------------------------------------------
 OrdererOrgs:
   # ---------------------------------------------------------------------------
