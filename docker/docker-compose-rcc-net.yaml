@@ -85,7 +85,6 @@ services:
       - RegistryChainChannel
 
 
-
   orderer0.orgC.com:
     container_name: orderer0.orgC.com
     image: hyperledger/fabric-orderer:$IMAGE_TAG
