@@ -1,0 +1,18 @@
+.
+├── configFiles
+│   ├── crypto-configs
+│   │   ├── crypto-config-orgA.yaml
+│   │   ├── crypto-config-orgB.yaml
+│   │   └── crypto-config-orgC.yaml
+│   ├── networkConfig
+│   │   └── configtx.yaml
+│   ├── ordererConfigs
+│   │   ├── ordererA.yaml
+│   │   ├── ordererB.yaml
+│   │   └── ordererC.yaml
+│   └── peerConfigs
+│       └── core.yaml
+├── sharedContracts
+└── tree.txt
+
+6 directories, 9 files
