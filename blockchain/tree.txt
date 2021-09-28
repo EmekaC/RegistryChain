@@ -1,4 +1,16 @@
 .
+├── bin
+│   ├── configtxgen
+│   ├── configtxlator
+│   ├── cryptogen
+│   ├── discover
+│   ├── fabric-ca-client
+│   ├── fabric-ca-server
+│   ├── idemixgen
+│   ├── orderer
+│   └── peer
+├── ca
+│   └── ca.yaml
 ├── configFiles
 │   ├── crypto-configs
 │   │   ├── crypto-config-orgA.yaml
@@ -13,6 +25,17 @@
 │   └── peerConfigs
 │       └── core.yaml
 ├── sharedContracts
+│   ├── tokens
+│   │   ├── ERC20Basic.js
+│   │   ├── ERC20Detailed.js
+│   │   ├── ERC20.js
+│   │   ├── exampleTokenContract.js
+│   │   ├── JoinMintToken.js
+│   │   ├── OwnableToken.js
+│   │   └── test_logic.js
+│   └── utilities
+│       ├── helper.js
+│       └── validator.js
 └── tree.txt
 
-6 directories, 9 files
+10 directories, 28 files
