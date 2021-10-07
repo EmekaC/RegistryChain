@@ -82,7 +82,7 @@ Composer         | Used for blockchain network design
 
 ### Who do I talk to? ###
 
-* This Repo was first created by Emeka Chukwu (EmekaC@nameksolutions.com) as part of his PhD thesis.
+* This Repo was first created by Emeka Chukwu (nnaemeka.chukwu.16@um.edu.mt) as part of his PhD thesis.
 * Contact others
 
 ### License ###
