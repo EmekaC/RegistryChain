@@ -1,6 +1,14 @@
 const mongoose = require('mongoose')
+require('dotenv').config()
 
-mongoose.connect('mongodb://127.0.0.1:27017/health-api', {
+mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
+    useUnifiedTopology: true,
     useCreateIndex: true
+})
+.then(() => {
+    console.log('MongoDB connected successfully');
+}).catch((err) => {
+    console.log('Unable to connect to mongoBD   ', err);
+    process.exit();
 })
