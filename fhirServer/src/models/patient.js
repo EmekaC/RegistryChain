@@ -3,10 +3,17 @@ const validator = require('validator')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
 require('dotenv').config()
+const PHR = require('../models/phr')
 
 
-const practitionerSchema = new mongoose.Schema({
+
+
+const patientSchema = new mongoose.Schema({
     isDeleted: {
+        type: Boolean,
+        default: false
+    },
+    isAssigned: {
         type: Boolean,
         default: false
     },
@@ -104,7 +111,7 @@ const practitionerSchema = new mongoose.Schema({
         }
     },
     tokens: [{
-       token: {
+        token: {
             type: String,
             required: true
         }
@@ -132,6 +139,17 @@ const practitionerSchema = new mongoose.Schema({
     gender: {
         type: String,
         required: true
+    },
+    birthDate: {
+        type: Date
+    },
+    deceased: {
+        deceasedBoolean: {
+            type: Boolean
+        },
+        deceasedDateTime: {
+            type: Date
+        }
     },
     address: {
         use: {
@@ -170,8 +188,16 @@ const practitionerSchema = new mongoose.Schema({
             }
         }
     },
-    birthDate: {
-        type: Date
+    maritalStatus: {
+        type: String
+    },
+    multipleBirth: {
+        multipleBirthBoolean: {
+            type: Boolean
+        },
+        multipleBirthInteger: {
+            type: Number
+        }
     },
     photo: {
         contentType: {
@@ -196,64 +222,94 @@ const practitionerSchema = new mongoose.Schema({
             type: Date
         }
     },
-    qualification: {
-        identifier: {
+    contact: {
+        relationship: {
+            type: String
+        },
+        name: {
             use: {
                 type: String
             },
-            _type: {
-                coding: {
-                    system: {
-                        type: String
-                    },
-                    version: {
-                        type: String
-                    },
-                    code: {
-                        type: String
-                    },
-                    display: {
-                        type: String
-                    },
-                    userSelected: {
-                        type: Boolean
-                    }
-                },
-                text: {
-                    type: String
-                }
+            text: {
+                type: String
             },
+            family: {
+                type: String
+            },
+            given: {
+                type: String
+            },
+            prefix: {
+                type: String
+            },
+            suffix: {
+                type: String
+            },
+            period: {
+                start: {
+                    type: Date
+                },
+                end: {
+                    type: Date
+                }
+            }
+        },
+        telecom: {
             system: {
                 type: String
             },
             value: {
                 type: String
             },
-            assigner: {
+            use: {
+                type: String
+            },
+            period: {
                 type: String
             }
         },
-        code: {
-            coding: {
-                system: {
-                    type: String
-                },
-                version: {
-                    type: String
-                },
-                code: {
-                    type: String
-                },
-                display: {
-                    type: String
-                },
-                userSelected: {
-                    type: Boolean
-                }
+        address: {
+            use: {
+                type: String
+            },
+            _type: {
+                type: String
             },
             text: {
                 type: String
+            },
+            line: {
+                type: String
+            },
+            city: {
+                type: String
+            },
+            district: {
+                type: String
+            },
+            state: {
+                type: String
+            },
+            postalCode: {
+                type: String
+            },
+            country: {
+                type:  String
+            },
+            period: {
+                start: {
+                    type: Date
+                },
+                end: {
+                    type: Date
+                }
             }
+        },
+        gender: {
+            type: String
+        },
+        organization: {
+            type: String
         },
         period: {
             start: {
@@ -262,13 +318,27 @@ const practitionerSchema = new mongoose.Schema({
             end: {
                 type: Date
             }
-        },
-        issuer: {
-            type: String
         }
     },
     communication: {
-        commonLanguages: {
+        language: {
+            type: String
+        },
+        preferred: {
+            type: Boolean
+        }
+    },
+    generalPractitioner: {
+        type: String
+    },
+    managingOrganization: {
+        type: String
+    },
+    link: {
+        other: {
+            type: String
+        },
+        type: {
             type: String
         }
     }
@@ -276,60 +346,79 @@ const practitionerSchema = new mongoose.Schema({
 
 
 //Hide important details
-practitionerSchema.methods.toJSON = function () {
-    const practitioner = this
-    const practitionerObject = practitioner.toObject()
-    delete practitionerObject.isDeleted
-    delete practitionerObject.password
-    delete practitionerObject.tokens
-    delete practitionerObject.avatar
+patientSchema.methods.toJSON = function () {
+    const patient = this
+    const patientObject = patient.toObject()
 
-    return practitionerObject
+    delete patientObject.isDeleted
+    delete patientObject.isAssigned
+    delete patientObject.password
+    delete patientObject.tokens
+    delete patientObject.avatar
+
+    return patientObject
 }
 
 
 //Hash password
-practitionerSchema.pre('save', async function (next) {
-    const practitioner = this
+patientSchema.pre('save', async function (next) {
+    const patient = this
 
-    if (practitioner.isModified('password')) {
-        practitioner.password = await bcrypt.hash(practitioner.password, 8)
+    if (patient.isModified('password')) {
+        patient.password = await bcrypt.hash(patient.password, 8)
     }
     next()
 })
 
 
 //Credentials for login
-practitionerSchema.statics.findByCredentials = async (email, password) => {
-    const practitioner = await Practitioner.findOne({ email, isDeleted: false })
+patientSchema.statics.findByCredentials = async (email, password) => {
+    const patient = await Patient.findOne({ email, isDeleted: false })
 
-    if (!practitioner) {
+    if (!patient) {
         throw new Error('Unable to login')
     }
 
-    const isMatch = await bcrypt.compare(password, practitioner.password)
+    const isMatch = await bcrypt.compare(password, patient.password)
 
     if (!isMatch) {
         throw new Error('Unable to login')
     }
 
-    return practitioner
+    return patient
 }
 
 
 //Generate authentication
-practitionerSchema.methods.generateAuthToken = async function () {
-    const practitioner = this
-    const token = jwt.sign({ _id: practitioner._id.toString() }, process.env.PRACTITIONER_JWT_SECRET, { expiresIn: '3 days' })
+patientSchema.methods.generateAuthToken = async function () {
+    const patient = this
+    const token = jwt.sign({ _id: patient._id.toString() }, process.env.PATIENT_JWT_SECRET, { expiresIn: '3 days' })
     
-    practitioner.tokens = await practitioner.tokens.concat({ token })
-    practitioner.name.text = await practitioner.name.given + ' ' + practitioner.name.family
-    await practitioner.save()
+    patient.tokens = await patient.tokens.concat({ token })
+    patient.name.text = await patient.name.given + ' ' + patient.name.family
+    await patient.save()
 
     return token
 }
 
 
-const Practitioner = mongoose.model('Practitioner', practitionerSchema)
+//Link between patient and their PHR
+patientSchema.virtual('phrs', {
+    ref: 'PHR',
+    localField: '_id',
+    foreignField: 'owner'
+})
 
-module.exports = Practitioner
+
+//Delete patient PHR when patient is deleted
+patientSchema.pre('remove', async function (next) {
+    const patient = this
+    await PHR.deleteMany({ owner: patient._id })
+    next()
+})
+
+
+const Patient = mongoose.model('Patient', patientSchema)
+
+
+module.exports = Patient
