@@ -25,9 +25,13 @@ The following dependencies are necessary to run the code in this repository.
 * CouchDB: v3.1.1
 
 ## How do I get set up? ##
-This is how to run a code `npm install` function.
-~~text struckthrough~~
-
+This is how to run a code:
+Go to convenient location and `git clone`
+Then install dependencies with `npm install` function.
+See sample.env file shown in the folder directory for guide.
+Run the app in development environment using the command `npm start`
+~~Other configs may be required depending on the operating system~~
+The API documentation for CRUD Patient profile, PHR, Practitioner is as in this documentation link [API Documentation](https://documenter.getpostman.com/view/16276703/UVJbFwmz).
 
 ### Hyperledger fabric architectural components (YAML binaries) ###
 Core components  | Tools and Utilities  |  Fabric Certification Authority
