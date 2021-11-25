@@ -1,9 +1,7 @@
+require('dotenv').config()
 const express = require('express')
 const Redis = require("ioredis")
-require('dotenv').config()
-const redis = new Redis({
-    url: process.env.REDIS_URL
-})
+const redis = new Redis(process.env.REDIS_URL)
 const multer = require('multer')
 const sharp = require('sharp')
 const Patient = require('../models/patient')
@@ -58,7 +56,7 @@ router.post('/patients/logout', auth, async (req, res) => {
 })
 
 
-//Logout all
+//Logout of all devices at once
 router.post('/patients/logoutAll', auth, async (req, res) => {
     try {
         req.patient.tokens = []
@@ -70,7 +68,7 @@ router.post('/patients/logoutAll', auth, async (req, res) => {
 })
 
 
-//Generate OTP
+//Generate OTP to grant access to practitioner to perform operations on patient's PHR
 router.get('/patients/assign', auth, async (req, res) => {
     try {
         const isAssigned = true
@@ -83,7 +81,6 @@ router.get('/patients/assign', auth, async (req, res) => {
             ['set', redisKey, JSON.stringify(OTP)],
             ['expire', redisKey, 120],
         ]).exec();
-        //sendOtpEmail(req.user.email, req.user.name, OTP)
 
         res.send('Sent')
         
@@ -142,7 +139,7 @@ router.delete('/patients/me', auth, async (req, res) => {
 })
 
 
-//Upload profile picture
+//Function to configure profile picture upload
 const upload = multer({
     limits: {
         fileSize: 1000000
@@ -157,6 +154,7 @@ const upload = multer({
 })
 
 
+//Upload profile picture
 router.post('/patients/me/avatar', auth, upload.single('avatar'), async (req, res) => {
     const buffer = await sharp(req.file.buffer).resize({ width: 250, height: 250 }).png().toBuffer()
     req.patient.avatar = buffer
@@ -167,6 +165,7 @@ router.post('/patients/me/avatar', auth, upload.single('avatar'), async (req, re
 })
 
 
+//Delete profile picture
 router.delete('/patients/me/avatar', auth, async (req, res) => {
     req.patient.avatar = undefined
     await req.patient.save()
@@ -174,6 +173,7 @@ router.delete('/patients/me/avatar', auth, async (req, res) => {
 })
 
 
+//View profile picture in the browser
 router.get('/patients/:id/avatar', async (req, res) => {
     try {
         const patient = await Patient.findById(req.params.id)
@@ -190,4 +190,5 @@ router.get('/patients/:id/avatar', async (req, res) => {
 })
 
 
+//Export routes for operations on patient's account
 module.exports = router
