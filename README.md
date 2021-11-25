@@ -24,7 +24,7 @@ The following dependencies are necessary to run the code in this repository.
 * Go: go1.15.7
 * CouchDB: v3.1.1
 
-## How do I get set up? ##
+## Setting up FHIRServer ##
 This is how to run a code:
 Go to convenient location and `git clone`
 Then install dependencies with `npm install` function.
