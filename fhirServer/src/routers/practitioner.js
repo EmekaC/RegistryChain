@@ -1,9 +1,7 @@
+require('dotenv').config()
 const express = require('express')
 const Redis = require("ioredis")
-require('dotenv').config()
-const redis = new Redis({
-    url: process.env.REDIS_URL
-})
+const redis = new Redis(process.env.REDIS_URL)
 const multer = require('multer')
 const sharp = require('sharp')
 const Practitioner = require('../models/practitioner')
@@ -18,7 +16,7 @@ router.get('/practitioners', async (req, res) => {
 })
 
 
-//Create
+//Create practitioner profile
 router.post('/practitioners', async (req, res) => {
     const practitioner = await new Practitioner(req.body)
 
@@ -31,7 +29,8 @@ router.post('/practitioners', async (req, res) => {
     }
 })
 
-//Login
+
+//Login into practitioner profile
 router.post('/practitioners/login', async (req, res) => {
     try {
         const practitioner = await Practitioner.findByCredentials(req.body.email, req.body.password)
@@ -42,7 +41,8 @@ router.post('/practitioners/login', async (req, res) => {
     }
 })
 
-//Logout
+
+//Logout of practitioner profile
 router.post('/practitioners/logout', auth, async (req, res) => {
     try {
         req.practitioner.tokens = req.practitioner.tokens.filter((token) => {
@@ -56,7 +56,8 @@ router.post('/practitioners/logout', auth, async (req, res) => {
     }
 })
 
-//Logout all
+
+//Logout all devices at once
 router.post('/practitioners/logoutAll', auth, async (req, res) => {
     try {
         req.practitioner.tokens = []
@@ -67,7 +68,8 @@ router.post('/practitioners/logoutAll', auth, async (req, res) => {
     }
 })
 
-//Get OTP
+
+//Get OTP for verification to gain access for patient to perfom operations on patient's PHR
 const getRedisData = (redisKey) => {
     return new Promise(function (resolve, reject) {
         redis.get(redisKey,  function (err, reply) {
@@ -76,7 +78,8 @@ const getRedisData = (redisKey) => {
     });
 }
 
-//Verify OTP
+
+//Verify OTP to gain access for patient to perfom operations on patient's PHR
 router.get('/practitioners/verify', auth, async (req, res) => {
     try {
         const redisKey = 'otp'
@@ -103,27 +106,12 @@ router.get('/practitioners/verify', auth, async (req, res) => {
     }
 })
 
-//Read profile
+
+//Read practitioner profile
 router.get('/practitioners/me', auth, async (req, res) => {
     res.send(req.practitioner)
 })
 
-
-// //Read by id
-// router.get('/practitioners/:id', async (req, res) => {
-//     const _id = req.params.id
-//     try {
-//         const practitioner = await Practitioner.findOne({ _id, isDeleted: false })
-
-//         if (!practitioner) {
-//             return res.status(404).send()
-//         }
-
-//         res.send(practitioner)
-//     } catch (e) {
-//         res.status(500).send()
-//     }
-// })
 
 
 // //Read by the first 3 characters
@@ -144,7 +132,7 @@ router.get('/practitioners/me', auth, async (req, res) => {
 // })
 
 
-//Update
+//Update practitioner profile
 router.patch('/practitioners/me', auth, async (req, res)=> {
     try {
         await req.practitioner.updateOne(req.body, { new: true, runValidators: true })
@@ -156,7 +144,7 @@ router.patch('/practitioners/me', auth, async (req, res)=> {
 })
 
 
-//Delete
+//Delete practitioner profile
 router.delete('/practitioners/me', auth, async (req, res) => {
     try {
         const isDeleted = true
@@ -170,7 +158,8 @@ router.delete('/practitioners/me', auth, async (req, res) => {
     }
 })
 
-//Upload profile picture
+
+//Function to configure profile picture upload
 const upload = multer({
     limits: {
         fileSize: 1000000
@@ -185,6 +174,7 @@ const upload = multer({
 })
 
 
+//Upload profile picture
 router.post('/practitioners/me/avatar', auth, upload.single('avatar'), async (req, res) => {
     const buffer = await sharp(req.file.buffer).resize({ width: 250, height: 250 }).png().toBuffer()
     req.practitioner.avatar = buffer
@@ -195,6 +185,7 @@ router.post('/practitioners/me/avatar', auth, upload.single('avatar'), async (re
 })
 
 
+//Delete profile picture
 router.delete('/practitioners/me/avatar', auth, async (req, res) => {
     req.practitioner.avatar = undefined
     await req.practitioner.save()
@@ -202,6 +193,7 @@ router.delete('/practitioners/me/avatar', auth, async (req, res) => {
 })
 
 
+//View profile picture in the browser
 router.get('/practitioners/:id/avatar', async (req, res) => {
     try {
         const practitioner = await Practitioner.findById(req.params.id)
@@ -218,4 +210,5 @@ router.get('/practitioners/:id/avatar', async (req, res) => {
 })
 
 
+//Export routes for operations on practitioner's account
 module.exports = router
