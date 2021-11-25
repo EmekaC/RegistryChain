@@ -7,8 +7,9 @@ const auth = require('../middleware/patientAuth')
 const router = new express.Router()
 
 
-//Create
+//Create patient's PHR
 router.post('/phrs', auth1, async (req, res) => {
+
     const phr = await new PHR(req.body)
 
     try {
@@ -20,40 +21,72 @@ router.post('/phrs', auth1, async (req, res) => {
 })
 
 
-//Practitioner: read all
-router.get('/phrs', auth1, async (req, res) => {
+//Practitioner route to read patient's PHR encounter(fixed record)
+router.get('/phrs/fixed_records', auth1, async (req, res) => {
     try {
-        const phr = await PHR.find(req.body, { isDeleted: false })
+        const phr = await PHR.find(req.body)
         //await req.patient.populate('phrs').execPopulate()
         
         if (!phr) {
             return res.status(404).send()
         }
+        const encounter = phr[0].fixed_records[0]
 
-        res.send(phr)
+        res.send(encounter)
     } catch (e) {
         res.status(500).send(e)
     }
 })
 
 
-//Patient: read all
+//Patient route to read their PHR encounter(fixed record)
+router.get('/me/phrs/fixed_records', auth, async (req, res) => {
+    try {
+        //const phr = await PHR.find({ owner: req.patient._id, isDeleted: false })
+        await req.patient.populate('phrs').execPopulate()
+        const encounter = req.patient.phrs[0].fixed_records[0]
+        res.send(encounter)
+    } catch (e) {
+        res.status(500).send()
+    }
+})
+
+
+//Practitioner route to read patient's PHR: all phrs(reccuring record)
+router.get('/phrs', auth1, async (req, res) => {
+    try {
+        const phr = await PHR.find(req.body)
+        //await req.patient.populate('phrs').execPopulate()
+        
+        if (!phr) {
+            return res.status(404).send()
+        }
+        const recurring = phr[0].recurring_records[0]
+
+        res.send(recurring)
+    } catch (e) {
+        res.status(500).send({ error: e.message })
+    }
+})
+
+
+//Patient route to read their PHR: read encounter(recurring record)
 router.get('/me/phrs', auth, async (req, res) => {
     try {
         //const phr = await PHR.find({ owner: req.patient._id, isDeleted: false })
         await req.patient.populate('phrs').execPopulate()
-        res.send(req.patient.phrs)
+        const encounter = req.patient.phrs[0].recurring_records[0]
+        res.send(encounter)
     } catch (e) {
         res.status(500).send()
     }
 })
 
 
-//Practitioner: read by id
+//Practitioner route to read patient's PHR by id
 router.get('/phrs/:id', auth1, async (req, res) => {
-    const _id = req.params.id
     try {
-        const phr = await PHR.find({ _id, isDeleted: false })
+        const phr = await PHR.findById(req.params.id)
 
         if (!phr) {
             return res.status(404).send()
@@ -66,11 +99,11 @@ router.get('/phrs/:id', auth1, async (req, res) => {
 })
 
 
-//Patient: read by id
+//Patient route to read their PHR by id
 router.get('/me/phrs/:id', auth, async (req, res) => {
     const _id = req.params.id
     try {
-        const phr = await PHR.findOne({ _id, owner: req.patient._id, isDeleted: false })
+        const phr = await PHR.findOne({ _id, owner: req.patient._id })
 
         if (!phr) {
             return res.status(404).send()
@@ -83,12 +116,12 @@ router.get('/me/phrs/:id', auth, async (req, res) => {
 })
 
 
-//Practitioner: read by the first 3 characters
+//Practitioner route to search for PHR by the first 3 characters of their nationality (this is subject to change)
 router.get('/phrsSearch', auth1, async (req, res) => {
     try {
-        const newSearchString = req.query._type.substring(0, 3);
+        const newSearchString = req.query.nationality.substring(0, 3);
         const regexExpression = new RegExp(`${newSearchString}`, 'i');
-        const phr = await PHR.find({ _type: { $regex: regexExpression }, isDeleted: false });
+        const phr = await PHR.find({ nationality: { $regex: regexExpression } });
 
         if (!phr) {
             return res.status(404).send()
@@ -101,12 +134,12 @@ router.get('/phrsSearch', auth1, async (req, res) => {
 })
 
 
-//Patient: read by the first 3 characters
+//Patient route to search for PHR by the first 3 characters of their nationality (this is subject to change)
 router.get('/me/phrsSearch', auth, async (req, res) => {
     try {
-        const newSearchString = req.query._type.substring(0, 3);
+        const newSearchString = req.query.nationality.substring(0, 3);
         const regexExpression = new RegExp(`${newSearchString}`, 'i');
-        const phr = await PHR.find({ _type: { $regex: regexExpression }, isDeleted: false });
+        const phr = await PHR.find({ nationality: { $regex: regexExpression } });
 
         if (!phr) {
             return res.status(404).send()
@@ -119,11 +152,10 @@ router.get('/me/phrsSearch', auth, async (req, res) => {
 })
 
 
-//Update
+//Update patient's PHR
 router.patch('/phrs/:id', auth1, async (req, res) => {
-    const _id = req.params.id
     try {
-        const phr = await PHR.findOne({ _id, isDeleted: false })
+        const phr = await PHR.findById(req.params.id)
 
         if (!phr) {
             return res.status(404).send()
@@ -137,18 +169,15 @@ router.patch('/phrs/:id', auth1, async (req, res) => {
 })
 
 
-//Delete
+//Delete patient's PHR
 router.delete('/phrs/:id', auth1, async (req, res) => {
-    const _id = req.params.id
     try {
-        const isDeleted = true
-        const phr = await PHR.findOne({ _id, isDeleted: false })
+        const phr = await PHR.findByIdAndDelete(req.params.id)
 
         if (!phr) {
             return res.status(404).send()
         }
 
-        await phr.updateOne({ isDeleted })
         res.send('Deleted successfully')
     } catch (e) {
         res.status(400).send()
@@ -156,4 +185,5 @@ router.delete('/phrs/:id', auth1, async (req, res) => {
 })
 
 
+//Export routes for operations on patient's PHR
 module.exports = router
