@@ -1,6 +1,8 @@
-const nodemailer = require('nodemailer')
 require('dotenv').config()
+const nodemailer = require('nodemailer')
 
+
+//Setting up nodemailer
 const transporter = nodemailer.createTransport({
     service: 'outlook',
     auth: {
@@ -9,6 +11,7 @@ const transporter = nodemailer.createTransport({
     }
 })
 
+//Function setup to send welcome email for when users create an account
 const welcomeEmail = (email, name) => {
     const options = {
         from: process.env.EMAIL,
@@ -21,6 +24,7 @@ const welcomeEmail = (email, name) => {
 }
 
 
+//Function setup to send cancellation email for when users delete their account
 const cancelEmail = (email, name) => {
     const options = {
         from: process.env.EMAIL,
@@ -33,6 +37,7 @@ const cancelEmail = (email, name) => {
 }
 
 
+//Function setup to send an OTP for when a patient grants access to a practitioner to their PHR
 const otpEmail = (email, name, otp) => {
     const options = {
         from: process.env.EMAIL,
@@ -45,4 +50,17 @@ const otpEmail = (email, name, otp) => {
 }
 
 
-module.exports = { welcomeEmail, cancelEmail, otpEmail }
+//Function setup to verify an email before an account is created
+const verifyEmail = (email, name, otp) => {
+    const options = {
+        from: process.env.EMAIL,
+        to: email,
+        subject: `${otp} Do not share this sign-in confirmation code with anyone. If you like share it, na you sabi!!!`,
+        text: `Hi ${name}, \n\n Your sign-in confirmation code is: \n\n ${otp}. \n\n The code expires in 2 minutes. \n\n Cura`
+    }
+
+    transporter.sendMail(options)
+}
+
+//Exporting all the functions
+module.exports = { welcomeEmail, cancelEmail, otpEmail, verifyEmail }
