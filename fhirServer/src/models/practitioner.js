@@ -1,10 +1,11 @@
+require('dotenv').config()
 const mongoose = require('mongoose')
 const validator = require('validator')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-require('dotenv').config()
 
 
+//Practitioner schema for patient database containing practitioner's details
 const practitionerSchema = new mongoose.Schema({
     isDeleted: {
         type: Boolean,
@@ -275,7 +276,7 @@ const practitionerSchema = new mongoose.Schema({
 })
 
 
-//Hide important details
+//Function to hide important details in the response that are sensitive and unimportant to the practitioner
 practitionerSchema.methods.toJSON = function () {
     const practitioner = this
     const practitionerObject = practitioner.toObject()
@@ -288,7 +289,7 @@ practitionerSchema.methods.toJSON = function () {
 }
 
 
-//Hash password
+//Function to hash password
 practitionerSchema.pre('save', async function (next) {
     const practitioner = this
 
@@ -299,7 +300,7 @@ practitionerSchema.pre('save', async function (next) {
 })
 
 
-//Credentials for login
+//Function for login credentials
 practitionerSchema.statics.findByCredentials = async (email, password) => {
     const practitioner = await Practitioner.findOne({ email, isDeleted: false })
 
@@ -317,7 +318,7 @@ practitionerSchema.statics.findByCredentials = async (email, password) => {
 }
 
 
-//Generate authentication
+//Function to generate JWT for authentication at the point of login
 practitionerSchema.methods.generateAuthToken = async function () {
     const practitioner = this
     const token = jwt.sign({ _id: practitioner._id.toString() }, process.env.PRACTITIONER_JWT_SECRET, { expiresIn: '3 days' })
@@ -330,6 +331,9 @@ practitionerSchema.methods.generateAuthToken = async function () {
 }
 
 
+//Call mongoose model method to initialize the practitioner model
 const Practitioner = mongoose.model('Practitioner', practitionerSchema)
 
+
+//Export the practitioner model
 module.exports = Practitioner
