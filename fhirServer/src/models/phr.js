@@ -1,161 +1,6 @@
 const mongoose = require('mongoose')
-// const medSchema = require('./schemas/medicationStatementSchema')
-// const allergyIntSchema = require('./schemas/allergyIntoleranceSchema')
-// const conditionSchema = require('./schemas/conditionSchema')
-// const valueSetSchema = require('./schemas/valueSetSchema')
 
-
-// const phrSchema = new mongoose.Schema({
-//     isDeleted: {
-//         type: Boolean,
-//         default: false
-//     },
-//     identifier: {
-//         use: {
-//             type: String
-//         },
-//         _type: {
-//             coding: {
-//                 system: {
-//                     type: String
-//                 },
-//                 version: {
-//                     type: String
-//                 },
-//                 code: {
-//                     type: String
-//                 },
-//                 display: {
-//                     type: String
-//                 },
-//                 userSelected: {
-//                     type: Boolean
-//                 }
-//             },
-//             text: {
-//                 type: String
-//             }
-//          },
-//         system: {
-//             type: String
-//         },
-//         value: {
-//             type: String
-//         },
-//         assigner: {
-//             type: String
-//         }
-//     }, 
-//     _type: {
-//             type: String
-//     },
-//     timestamp: {
-//         type: String
-//     },
-//     total: {
-//         type: Number
-//     },
-//     link: {
-//         relation: {
-//             type: String
-//         },
-//         url: {
-//             type: String
-//         }
-//     },
-//     entry: {
-//         link: {
-//             type: String
-//         },
-//         fullUrl: {
-//             type: String
-//         },
-//         resource: {
-//             type: String
-//         },
-//         search: {
-//             mode: {
-//                 type: String
-//             },
-//             score: {
-//                 type: Number
-//             }
-//         },
-//         request: {
-//             method: {
-//                 type: String
-//             },
-//             url: {
-//                 type: String
-//             },
-//             ifNoneMatch: {
-//                 type: String
-//             },
-//             ifModifiedSince: {
-//                 type: String
-//             },
-//             ifMatch: {
-//                 type: String
-//             },
-//             ifNoneExist: {
-//                 type: String
-//             }
-//         },
-//         response: {
-//             status: {
-//                 type: String
-//             },
-//             location: {
-//                 type: String
-//             },
-//             etag: {
-//                 type: String
-//             },
-//             lastModified: {
-//                 type: String
-//             },
-//             outcome: {
-//                 type: String
-//             }
-//         }
-//     },
-//     signature: {
-//         _type: {
-//             type: Array
-//         },
-//         when: {
-//             instant: {
-//                 type: Date
-//             }
-//         },
-//         who: {
-//             type: String
-//         },
-//         onBehalfOf: {
-//             type: String
-//         },
-//         targetFormat: {
-//             type: String
-//         },
-//         sigFormat: {
-//             type: String
-//         },
-//         data: {
-//             type: Buffer
-//         }
-//     },
-//     medicationStatement: [medSchema],
-//     allergyIntolerance: [allergyIntSchema],
-//     condition: [conditionSchema],
-//     valueSet: [valueSetSchema],
-//     owner: {
-//         type: mongoose.Schema.Types.ObjectId,
-//         required: true,
-//         ref: 'Patient'
-//     }
-// })
-
-
+//PHR schema for patient database containing PHR's details
 const phrSchema = new mongoose.Schema({
     recurring_records: [{
         physical_examinations: {
@@ -337,6 +182,15 @@ const phrSchema = new mongoose.Schema({
             }
         }
     }],
+    genotype: {
+        type: String
+    },
+    blood_group: {
+        type: String
+    },
+    nationality: {
+        type: String
+    },
     owner: {
         type: mongoose.Schema.Types.ObjectId,
         required: true,
@@ -345,16 +199,9 @@ const phrSchema = new mongoose.Schema({
 })
 
 
-// //Hide important details
-// phrSchema.methods.toJSON = function () {
-//     const phr = this
-//     const phrObject = phr.toObject()
-//     delete phrObject.isDeleted
-    
-//     return phrObject
-// }
-
-
+//Call mongoose model method to initialize the PHR model
 const PHR = mongoose.model('PHR', phrSchema)
 
+
+//Export the PHR model
 module.exports = PHR
