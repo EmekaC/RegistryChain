@@ -1,13 +1,12 @@
+require('dotenv').config()
 const mongoose = require('mongoose')
 const validator = require('validator')
 const bcrypt = require('bcryptjs')
 const jwt = require('jsonwebtoken')
-require('dotenv').config()
 const PHR = require('../models/phr')
 
 
-
-
+//Patient schema for patient database containing patient's details
 const patientSchema = new mongoose.Schema({
     isDeleted: {
         type: Boolean,
@@ -345,7 +344,7 @@ const patientSchema = new mongoose.Schema({
 })
 
 
-//Hide important details
+//Function to hide important details in the response that are sensitive and unimportant to the patient
 patientSchema.methods.toJSON = function () {
     const patient = this
     const patientObject = patient.toObject()
@@ -360,7 +359,7 @@ patientSchema.methods.toJSON = function () {
 }
 
 
-//Hash password
+//Function to hash password
 patientSchema.pre('save', async function (next) {
     const patient = this
 
@@ -371,7 +370,7 @@ patientSchema.pre('save', async function (next) {
 })
 
 
-//Credentials for login
+//Function for login credentials 
 patientSchema.statics.findByCredentials = async (email, password) => {
     const patient = await Patient.findOne({ email, isDeleted: false })
 
@@ -389,7 +388,7 @@ patientSchema.statics.findByCredentials = async (email, password) => {
 }
 
 
-//Generate authentication
+//Function to generate JWT for authentication at the point of login
 patientSchema.methods.generateAuthToken = async function () {
     const patient = this
     const token = jwt.sign({ _id: patient._id.toString() }, process.env.PATIENT_JWT_SECRET, { expiresIn: '3 days' })
@@ -418,7 +417,9 @@ patientSchema.pre('remove', async function (next) {
 })
 
 
+//Call mongoose model method to initialize the patient model
 const Patient = mongoose.model('Patient', patientSchema)
 
 
+//Export the patient model
 module.exports = Patient
