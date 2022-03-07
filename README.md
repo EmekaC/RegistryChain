@@ -31,7 +31,7 @@ Then install dependencies with `npm install` function.
 See sample.env file shown in the folder directory for guide.
 Run the app in development environment using the command `npm start`
 ~~Other configs may be required depending on the operating system~~
-The API documentation for CRUD Patient profile, PHR, Practitioner is as in this documentation link [API Documentation](https://documenter.getpostman.com/view/16276703/UVJbFwmz).
+The API documentation for CRUD Patient profile, PHR, Practitioner is as in this documentation link [API Documentation](https://documenter.getpostman.com/view/18524031/UVkvKsfH).
 
 ### Hyperledger fabric architectural components (YAML binaries) ###
 Core components  | Tools and Utilities  |  Fabric Certification Authority
