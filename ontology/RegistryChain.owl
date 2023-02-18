@@ -1,0 +1,2874 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "RegistryChain ontology for Emeka Chukwu's PhD thesis."
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#AbbreviatedValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#CLASS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#CLASSTYPE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#COMPONENT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Co-occuringConcepts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#ComputableHierarchies",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#ConceptMap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#NamingSystem"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#ConceptNameRanking",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#ConceptNamesSources",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Contexts",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#DataElements",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Definitions",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#DrugList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#NamingSystem"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#EXTERNAL_COPYRIGHT_NOTICE",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#EssentialDrugList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#NamingSystem"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Files",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#GeolocationUsecase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#History",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#ICD11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#blockId"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#chapterNo"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#classKind"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#code"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#depthInKind"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#foundationURI"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#isResidual"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#linearizationURI"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#title"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#uni-hierarchical"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#ImmunizationUsecase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#InsuranceDrugList",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#NamingSystem"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#InsuranceServices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#NamingSystem"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#LOINC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#CLASS"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#CLASSTYPE"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#COMPONENT"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#EXTERNAL_COPYRIGHT_NOTICE"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#LOINC_NUM"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#LONG_COMMON_NAME"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#METHOD_TYP"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#PROPERTY"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#SCALE_TYP"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#SHORTNAME"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#STATUS"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#SYSTEM"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#TIME_ASPCT"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#VersionFirstReleased"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#VersionLastReleased"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#uni-hierarchical"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#LOINC_NUM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#LONG_COMMON_NAME",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#METHOD_TYP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#Mappings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#NamingSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#PROPERTY",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#rational"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#ReferralUsecase",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#RelatedConcept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.co-ode.org/ontologies/ont.owl#RxNorm" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#poly-hierarchical"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#SCALE_TYP",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#SHORTNAME",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#SNOMEDCT.Component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#active"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#effectiveTime"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#id"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#moduleId"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#poly-hierarchical"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#SNOMEDCT.Component.Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#definitionStatusId"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#SNOMEDCT.Component"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#SNOMEDCT.Component.Description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#caseSignificanceId"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#conceptId"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#languageCode"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#term"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#typeId"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#SNOMEDCT.Component"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#SNOMEDCT.Component.Relationship",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#characteristicTypeId"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#destinationId"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#modifierId"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#relationshipGroup"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#sourceId"
+  }, {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#typeId"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#SNOMEDCT.Component"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#STATUS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#SYSTEM",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#SemanticTypes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#SimpleConceptAttributes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#SimpleMappings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#SourceInformation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#RxNorm"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#TIME_ASPCT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#ValueSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#NamingSystem"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#VersionFirstReleased",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#VersionLastReleased",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#active",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#blockId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#caseSignificanceId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#SCTID"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#chapterNo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#characteristicTypeId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#SCTID"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#classKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#conceptId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#SCTID"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#definitionStatusId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#SCTID"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#depthInKind",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#destinationId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#SCTID"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#effectiveTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#foundationURI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#id",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#SCTID"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#isResidual",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#languageCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#linearizationURI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#modifierId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#SCTID"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#moduleId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#SCTID"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#relationshipGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#sourceId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#SCTID"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#term",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#typeId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#SCTID"
+  } ]
+}, {
+  "@id" : "http://www.co-ode.org/ontologies/ont.owl#xsd.URI",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AdverseEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AdverseEvent_category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[product-problem | product-quality | product-use-error | wrong-dose | incorrect-prescribing-information | wrong-technique | wrong-route-of-administration | wrong-rate | wrong-duration | wrong-time | expired-drug | medical-device-use-error | problem-different-manufacturer | unsafe-physical-environment]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AdverseEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AdverseEvent_contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AdverseEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#RelatedPerson"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AdverseEvent_encounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AdverseEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Encounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AdverseEvent_event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "SNOMEDCTClinicalFindings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AdverseEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AdverseEvent_recorder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AdverseEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#RelatedPerson"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AdverseEvent_resultingCondition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AdverseEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Condition"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AdverseEvent_subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AdverseEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AggregateData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#DataView"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Allergy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance_asserter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#RelatedPerson"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance_category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[food | medication | environment | biologic]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance_clinicalStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[active | inactive | resolved]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance_criticality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[low | high | unable-to-assess]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance_encounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Encounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance_reaction_exposureRoute",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "SNOMEDCTRouteCodes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance_reaction_manifestation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "SNOMED CT Clinical Findings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance_recorder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#RelatedPerson"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance_subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[allergy | intolerance]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance_verificationStatus",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[unconfirmed | confirmed | refuted | entered-in-error]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Animal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Antenatal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AntenatalFollowUp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#followupEncounter" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AntenatalLaboratoryInvestigation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#laboratoryEncounter" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AntenatalRegistration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#registrationEncounter" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Appointment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#AuxiliaryStaff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CaeserianSection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#Procedure" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#SVD"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ChartsGraphs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#DataView"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Chiefdom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#District"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ChildDelivery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Classifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ClinicalTerminologyRegistry"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ClinicalTerminologyRegistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem_concept_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Codes that identify the concepts in a code system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem_concept_concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem_content",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[not-present | example | fragment | complete | supplement]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem_filter_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem_filter_operator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[= | is-a | descentant-of | is-not-a | regex | in | not-in | generalizes | exists]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem_property_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem_property_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[code | Coding | string | integer | boolean | dateTime | decimal]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[draft | active | retired | unknown]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Community",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Ward"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CommunityFollowUpEncounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#followupEncounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CommunityHealthExtensionWorker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CommunityHealthWorker",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CommunityInformation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Questionnaire"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CommunityRegistrationEncounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#registrationEncounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#CommunityVolunteers",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Computer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#Device" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Condition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Condition_bodySite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "SNOMED CT Body site"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Condition_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Clinical finding"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Condition_evidence_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Condition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Country",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Location"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#DataView",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#DeviceMetric",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport_basedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport_encounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Encounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport_performer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport_subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticResult_resultInterpreter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#District",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Country"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Doctor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#DocumentManifest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Dosage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#DumbPhone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#Device" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#EMTCT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Encounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerObservation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#EndPoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Episiotomy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#Procedure" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ForcepsDelivery"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#FamilyPlanning",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#FeaturePhone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#Device" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ForcepsDelivery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#Procedure" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#SVD"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#GeneralHospital",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthFacility"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#GeneralOutpatient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#GeneralPractitioner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Doctor"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Government",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthAdministrator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthFacility",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Government"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthFacilityFollowUpEncounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#followupEncounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthFacilityInformation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Questionnaire"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthFacilityRegistration",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#registrationEncounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthFacilityRegistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#NamingSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthManagementOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PrivateSector"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthWorkforceRegistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#NamingSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#NamingSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService_Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Location(s) where service may be provided"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Location"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService_category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Broad category of service being performed or delivered"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService_coverageArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Location(s) service is intended for/available to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Location"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService_eligibility_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Specific eligibility requirements required to use the service\nCoded value for service eligibility"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService_endpoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Technical endpoints providing access to electronic services operated for the healthcare service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#EndPoint"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService_program",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The healthcare programs that this service is applicable to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService_providedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Organization that provides this service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService_serviceProvisionCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Conditions under which service is available/offered. You can use the valueset ServiceProvisionCondition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService_specialty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of service that may be delivered or performed"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HomeCommunityFollowUpEncounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CommunityFollowUpEncounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HomeCommunityRegistrationEncounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CommunityRegistrationEncounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#HospitalRegulator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#StateHealthAuthority"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Human",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ICD11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.co-ode.org/ontologies/ont.owl#ICD11" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ITSupportStaff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Identifier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Immunization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#IndividualizedPatientData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#DataView"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Informaticians",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePayment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#PaymentEncounter" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#NamingSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan_administeredBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Product administrator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan_coverageArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Where product applies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Location"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan_coverage_benefit_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan_coverage_network",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan_coverage_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan_ownedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Plan issuer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan_plan_network",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "what network provide coverage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan_plan_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the type of insurance plan and its details"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "kind of product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsurancePlan"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#InsuranceRegulator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#NationalHealthAuthority"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#InternationalPatientSummary",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#StructuredData"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Intolerance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AllergyIntolerance"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#InventoryReport",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AggregateData"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#IoHTDevice",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#Device" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#LOINC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.co-ode.org/ontologies/ont.owl#LOINC" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Laboratory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#LaboratoryTechnicians",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#LocalGovernmentArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#State"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#LocalHealthAuthority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Government"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MELStaff",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Measure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationReport_conclusionCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Codes for the clinical conclusion of test results (SNOMED CT Clinical findings)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationReport_result",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationReport_specimen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest_Medication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Medication to be taken (or reported on) [eg. SNOMED CT Medication Codes]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest_category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of medication usage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest_encounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Encounter where medication was requested"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Encounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest_insurance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest_intent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest_performer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Device"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#RelatedPerson"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest_priority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "routine | urgent | asap | stat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest_reasonCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reason or indication for ordering or not ordering the medication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest_reasonReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Condition"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest_recorder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest_reported_reportedReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reported rather than primary record"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#RelatedPerson"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest_requester",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Device"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#RelatedPerson"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest_statusReason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Reason of current status"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest_subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement_category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement_encounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Encounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement_informationSource",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement_partOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Procedure"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement_reasonCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement_reasonReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Condition"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#DiagnosticReport"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[active | completed | entered-in-error | intended | stopped | on-hold | unknown | not-taken]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement_statusReason",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Eg. SNOMEDCTDrigTherapyStatusCodes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement_subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Medicationstatement_medication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Midwife",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#NGO",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#NonProfit"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#NationalHealthAuthority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Government"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#NonProfit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Nurse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#OULevel1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Country"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#OULevel2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#OULevel1"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#OULevel3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#OULevel2"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation_basedOn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Fills plan, proposal, or order"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationRequest"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation_bodySite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Observed body part (eg SNOMED CT Body Structures)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation_category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Classification of type of observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Type of observation (code/type)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation_device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Mesurement device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Device"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#DeviceMetric"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation_encounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Healthcare event during which this observation is made"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Encounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation_hasMember",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#QuestionnaireResponse"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation_method",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "How it was done"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation_partOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Part of a referenced event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Immunization"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#MedicationStatement"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Procedure"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation_performer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Who is responsible for the observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#RelatedPerson"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation_specimen",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Specimen used for this observation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation_value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#OperationDefination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organization_Endpoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Technical endpoints providing access to services operated for the organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#EndPoint"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organization_contact_purpose",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "the type of contact. Can use contact entity type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organization_type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Kind of organization. Can use hl7 organization-type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#OutOfPocketPayment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#PaymentEncounter" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#OutreachCommunityFollowUpEncounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CommunityFollowUpEncounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#OutreachCommunityRegistrationEncounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CommunityRegistrationEncounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PHC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#Organisation" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthFacility"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PHCRegulator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#NationalHealthAuthority"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PHCRegulator2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#LocalHealthAuthority"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PatientIdentifierRegistry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#NamingSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PatientObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient_administrativeGender",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[male | female | other | unknown]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient_managingOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PaymentEncounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Encounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Pharmacists",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PostDeliveryVisit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#postnatalEncounter" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#childImmunization"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Postnatal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole_Endpoint",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Technical endpoints providing access to services operated for the practitioner with this role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#EndPoint"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole_HealthcareServices",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The list of healthcare services that this worker provides for this role's Organization/Location(s). This references the HealthcareService FHIR resource"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole_Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The location where the Practitioner provides service. This is a reference"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Location"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole_Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Organizations where the role is available"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole_Practitioner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "PractitionerRole is the role of a Practitioner.\nPractitioner that is able to provide the defined services for the organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The code of the role which this practitioner may perform. It can use SNOMED CT  where concept is-a 223366009 (Healthcare professional)\n\nAlternatively, it can be hlt-terminology (practitioner-role) [doctor | nurse | pharmacy | researcher | teacher | ict]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole_specialty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The code representing the specific specialty of the Practitioner. The hl7 and SNOMED CT valuesets here are prefered: https://www.hl7.org/fhir/valueset-c80-practice-codes.html"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner_HealthcareService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Practitioner can deliver healthcare service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthcareService"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner_Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Practitioner work_for an organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner_Patient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Practitioner see Patient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner_qualification_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Coded representation of qualifications. Agree and use any code system"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner_qualification_issuer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Organization that regulates and issues the qualification held by the Practitioner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PrivateGH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#GeneralHospital"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PrivatePHC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PHC"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PrivateSector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Organisation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PrivateTH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#TertiaryHospital"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Procedure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ProgramData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AggregateData"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Provenance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Provenance_location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Provenance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Location"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PublicGH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#GeneralHospital"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PublicPHC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PHC"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#PublicTH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#TertiaryHospital"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Questionnaire",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#QuestionnaireResponse",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#RelatedPerson",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#RelatedPersonObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Researcher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#SMoH",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#Organisation" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#SNOMEDCT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.co-ode.org/ontologies/ont.owl#SNOMEDCT.Component" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#SVD",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#deliveryEncounter" ],
+  "http://www.w3.org/2002/07/owl#sameAs" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#VacuumExtraction"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#SatelliteImagery",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#DataView"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Schedule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#SelfHomeCommunityFollowUpEncounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CommunityFollowUpEncounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#SelfHomeCommunityRegistrationEncounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CommunityRegistrationEncounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#SemiStructuredData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#IndividualizedPatientData"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#SensorObservation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Observation"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceDeliveryData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AggregateData"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest_bodySite",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest_category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest_encounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Encounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest_performer",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#RelatedPerson"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest_requester",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Practitioner"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#PractitionerRole"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#RelatedPerson"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest_subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ServiceRequest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Patient"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Slot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#SmartPhone",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#Device" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Specialist",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Doctor"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#State",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Country"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#StateHealthAuthority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Government"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#StructureDefinition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#StructuredData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#IndividualizedPatientData"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#SurveyData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#AggregateData"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#TabletPC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#Device" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#TerminologyCapability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#TertiaryHospital",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#HealthFacility"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#TertiaryHospitalRegulator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#NationalHealthAuthority"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#UNAgency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#NonProfit"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#UnstructuredData",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#IndividualizedPatientData"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#VacuumExtraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#Procedure" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.co-ode.org/ontologies/ont.owl#NamingSystem"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet_compose_include_ValueSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet_compose_include_concept_code",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#CodeSystem"
+  }, {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet_compose_include_filter_op",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[= | is-a | descendant-of | is-not-a | regex | in | not-in | exists]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "[draft | active | retired | unknown]"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ValueSet"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#Ward",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#LocalGovernmentArea"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#childImmunization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.registrychain.org/ontologies/ont.owl#Immunization" ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#deliveryEncounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Encounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#followupEncounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Encounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#laboratoryEncounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Encounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#poly-hierarchical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ClinicalTerminologyRegistry"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#postnatalEncounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Encounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#registrationEncounter",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#Encounter"
+  } ]
+}, {
+  "@id" : "http://www.registrychain.org/ontologies/ont.owl#uni-hierarchical",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.registrychain.org/ontologies/ont.owl#ClinicalTerminologyRegistry"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#SCTID",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+} ]
