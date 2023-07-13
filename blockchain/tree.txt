@@ -39,3 +39,104 @@
 └── tree.txt
 
 10 directories, 28 files
+.
+├── FHIR_Resources
+│   └── CodeSystemResource.json
+├── LICENSE
+├── README.md
+├── api
+│   ├── config
+│   │   ├── ccpGenerate.sh
+│   │   ├── ccpTemplate.json
+│   │   ├── connection-org1.json
+│   │   ├── connection-org2.json
+│   │   └── connection-org3.json
+│   ├── package-lock.json
+│   ├── package.json
+│   └── src
+│       ├── enrollAdmin.js
+│       ├── enrollAdmin2.js
+│       ├── queryTx.js
+│       ├── registerUser.js
+│       └── testing
+│           ├── enrollAdmin.js
+│           ├── invoke.js
+│           ├── query.js
+│           ├── registerUser.js
+│           └── wallet
+│               ├── admin.id
+│               └── appUser.id
+├── artifacts
+│   ├── Org1MSPanchors.tx
+│   ├── Org2MSPanchors.tx
+│   ├── Org3MSPanchors.tx
+│   ├── base.yaml
+│   ├── config
+│   │   ├── configtx.yaml
+│   │   ├── core.yaml
+│   │   └── orderer.yaml
+│   ├── configtx.yaml
+│   ├── create-artifacts.sh
+│   ├── crypto-config.yaml
+│   ├── docker-compose.yaml
+│   ├── genesis.block
+│   ├── mychannel.tx
+│   └── src
+│       └── github.com
+│           └── terminologyRegistry
+│               ├── package-lock.json
+│               ├── package.json
+│               ├── src
+│               │   ├── contract.ts
+│               │   ├── data.ts
+│               │   ├── index.ts
+│               │   └── interface.ts
+│               └── tsconfig.json
+├── caliper
+│   ├── benchmarks
+│   │   └── myAssetBenchmark.yaml
+│   ├── networks
+│   │   └── networkConfig.yaml
+│   ├── package-lock.json
+│   ├── package.json
+│   └── workload
+│       ├── create.js
+│       ├── init.js
+│       ├── query.js
+│       └── queryAll.js
+├── caliper_reports
+│   ├── 1000
+│   │   ├── first.html
+│   │   ├── last.html
+│   │   └── middle.html
+│   ├── 10000
+│   │   ├── first.html
+│   │   ├── last.html
+│   │   └── middle.html
+│   ├── fiveHundred.html
+│   ├── hundred.html
+│   ├── one.html
+│   ├── ten.html
+│   └── thousand.html
+├── channel-artifacts
+│   └── mychannel.block
+├── createChannel.sh
+├── deploy.sh
+├── deploy_copy.sh
+├── log.txt
+├── monitordocker.sh
+├── network_defaults.json
+├── node.json
+├── src
+│   ├── contract.ts
+│   ├── data.ts
+│   ├── index.ts
+│   └── interface.ts
+├── tree.txt
+└── utils
+    ├── CuraGwConnection.json
+    ├── gen-node-file.js
+    ├── package-lock.json
+    └── package.json
+
+22 directories, 76 files
