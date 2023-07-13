@@ -1,0 +1,44 @@
+{
+    "Org1MSP": {
+        "peer_ports": [
+            {
+                "peer0": 7051
+            }
+        ],
+        "cas": [
+            {
+                "port": 7054,
+                "admin_user": "admin",
+                "admin_password": "adminpw"
+            }
+        ]
+    },
+    "Org2MSP": {
+        "peer_ports": [
+            {
+                "peer0": 9051
+            }
+        ],
+        "cas": [
+            {
+                "port": 8054,
+                "admin_user": "admin",
+                "admin_password": "adminpw"
+            }
+        ]
+    },
+    "Org3MSP": {
+        "peer_ports": [
+            {
+                "peer0": 11051
+            }
+        ],
+        "cas": [
+            {
+                "port": 9054,
+                "admin_user": "admin",
+                "admin_password": "adminpw"
+            }
+        ]
+    }
+}

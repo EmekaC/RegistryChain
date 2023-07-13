@@ -1,0 +1,47 @@
+test:
+    name: terminology-registry-contract-benchmark
+    description: Hyperledger fabric testing using terminology_registry_chaincode Data usecase.
+    workers:
+      number: 2
+    rounds:
+      # - label: create/add terminology_registry_chaincode Data
+      #   description: calls the createPatient method and gives the benchmark
+      #   txNumber: 1
+      #   rateControl:
+      #     type: fixed-rate
+      #     opts:
+      #       tps: 
+      #   workload:
+      #     module: workload/create.js
+      #     arguments:
+      #       assets: 1
+      #       contractId: terminology_registry_chaincode
+      - label: query a terminology_registry_chaincode Data
+        description: calls the query method and gives the benchmark
+        txNumber: 1
+        rateControl:
+          type: fixed-rate
+          opts:
+            tps: 1
+        workload:
+          module: workload/query.js
+          arguments:
+            assets: 10
+            contractId: terminology_registry_chaincode
+      - label: Query All terminology_registry_chaincode Data
+        description: calls the queryAll method and gives the benchmark
+        txNumber: 1
+        rateControl:
+          type: fixed-rate
+          opts:
+            tps: 1
+        workload:
+          module: workload/queryAll.js
+          arguments:
+            contractId: terminology_registry_chaincode
+monitors:
+    resource:
+    - module: docker
+      options:
+        interval: 1
+        containers: [all]

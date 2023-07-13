@@ -1,0 +1,2 @@
+Installed chaincodes on peer:
+Package ID: terminology_registry_chaincode_1:d03e6232bf7762a15f784e39ab0ff811fd2c353c91988e01389ce28c9fcde5d2, Label: terminology_registry_chaincode_1
