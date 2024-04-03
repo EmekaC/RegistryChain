@@ -1,6 +1,6 @@
 {
   "name": "curafhirserver",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "dev": "nodemon src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Emeka Chukwu",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
