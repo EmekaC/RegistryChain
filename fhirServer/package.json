@@ -1,7 +1,7 @@
 {
   "name": "curafhirserver",
   "version": "1.2.0",
-  "description": "",
+  "description": "This is the FHIR server used to structure the files tested with RegistryChain",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
